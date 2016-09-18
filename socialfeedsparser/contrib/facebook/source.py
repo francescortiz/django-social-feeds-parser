@@ -6,7 +6,7 @@ from .settings import FACEBOOK_CLIENT_ID, FACEBOOK_CLIENT_SECRET
 try:
     from urllib2 import urlopen
     from urllib import urlencode
-    from urllib.error import HTTPError
+    from urllib2 import HTTPError
 except (ImportError):  # for python >= 3.4
     from urllib.request import urlopen
     from urllib.parse import urlencode
